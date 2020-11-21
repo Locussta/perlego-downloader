@@ -16,10 +16,17 @@ const table = Array.from(document.querySelectorAll('h2')).find(el=>el.textConten
 const labels = table.querySelectorAll("a");
 let output = "";
 labels.forEach((label)=>{
+
+    let parentLayer = 0;
+    for (let e = label; e !== table; e = e.parentNode) {
+        parentLayer++;
+    }
+    const layer = Math.floor((parentLayer - 5) / 2);
     const linkElems = label.getAttribute("href").split('/');
     const pageNum = linkElems[linkElems.length - 1];
     const textContent = label.innerText;
-    output += `0 ${pageNum} ${textContent}\n`;
+
+    output += `${layer} ${pageNum} ${textContent}\n`;
 }
 );
 
