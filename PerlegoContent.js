@@ -1,9 +1,9 @@
-function printMultipleDiv(start, end) {
+function printPages(start, end) {
     document.querySelector("style").remove();
     let printContents = "";
     let i = start;
-    function myLoop() {
-        setTimeout(function() {
+    function downloadPage() {
+        setTimeout(() => {
             let content = document.querySelector(`div[data-chapterid='${i}']`);
             content.scrollIntoView();
             if (content.querySelector(".pdfplaceholder") == null) {
@@ -11,7 +11,7 @@ function printMultipleDiv(start, end) {
                 i++;
             }
             if (i <= end) {
-                myLoop();
+							downloadPage();
             }
             if (i == end + 1) {
                 document.body.innerHTML = printContents;
@@ -24,5 +24,5 @@ function printMultipleDiv(start, end) {
             }
         }, 1000);
     }
-    myLoop();
+    downloadPage();
 }
