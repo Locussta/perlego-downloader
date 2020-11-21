@@ -7,8 +7,7 @@ function download(filename, text) {
         const event = document.createEvent('MouseEvents');
         event.initEvent('click', true, true);
         pom.dispatchEvent(event);
-    }
-    else {
+    } else {
         pom.click();
     }
 }
