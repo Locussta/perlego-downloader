@@ -3,7 +3,7 @@ function printPages(start, end) {
     let printContents = "";
     let i = start;
     function downloadPage() {
-        setTimeout(() => {
+        setTimeout(()=>{
             let content = document.querySelector(`div[data-chapterid='${i}']`);
             content.scrollIntoView();
             if (content.querySelector(".pdfplaceholder") == null) {
@@ -11,7 +11,7 @@ function printPages(start, end) {
                 i++;
             }
             if (i <= end) {
-							downloadPage();
+                downloadPage();
             }
             if (i == end + 1) {
                 document.body.innerHTML = printContents;
@@ -22,7 +22,8 @@ function printPages(start, end) {
                 }
                 , (end - start) * 100);
             }
-        }, 1000);
+        }
+        , 1000);
     }
     downloadPage();
 }
