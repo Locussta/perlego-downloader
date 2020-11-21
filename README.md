@@ -19,7 +19,7 @@ Please note that `PerlegoContent.js` does not save the menu(outline) of the pdf,
 **Procedure for downloading an entire textbook with the menu intact:** 
 1. Download all sections of the Ebook using `PerlegoContent.js`, make sure you name your pdfs `part_1.pdf`, `part_2.pdf`, etc. in the `Downloads` folder. 
 2. Make sure you have `poppler-utils` installed to combine the pdfs, and `fntsample` installed to add the outline. 
-3. Run `PerlegoOutline.js` from the *Table of contents* page of the Ebook in developer console. 
+3. Run `PerlegoOutline.js` from the "Table of contents" page of the Ebook (between "Book details" and "Related") in developer console. 
 4. (optional) You can customise the downloaded `outline.txt` according to [this specification](http://manpages.ubuntu.com/manpages/bionic/man1/pdfoutline.1.html). 
 5. In the `Downloads` folder, open a local terminal and run the following commands: 
 
