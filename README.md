@@ -1,1 +1,1 @@
-# perlego-downloader
+# Perlego EBook Downloader
