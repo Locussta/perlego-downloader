@@ -5,12 +5,12 @@
 College students that have used Perlego before know that downloading EBooks for offline viewing is not easy. This repository contains scripts that help paying users download their EBooks without hassle. 
 
  - **For the most basic use case (Less than ~200 pages):** 
-			1. Open Ebook in a browser (ideally ones available as PDF). 
-			2. Go to the page you want to start printing. 
-			3. Open Chrome's developer console [via the UI](https://developers.google.com/web/tools/chrome-devtools/open#chrome).
-			4. Paste the content of `PerlegoContent.js` into the console and press enter. 
-			5. Enter `printPages(startPage, endPage)` into the console, where `startPage` is the page number you want to start printing on, and `endPage` is the page number of the page you want to end on. 
-			6. Wait for the script to finish running, and you should be prompted to save the pdf. 
+	1. Open Ebook in a browser (ideally ones available as PDF). 
+	2. Go to the page you want to start printing. 
+	3. Open Chrome's developer console [via the UI](https://developers.google.com/web/tools/chrome-devtools/open#chrome).
+	4. Paste the content of `PerlegoContent.js` into the console and press enter. 
+	5. Enter `printPages(startPage, endPage)` into the console, where `startPage` is the page number you want to start printing on, and `endPage` is the page number of the page you want to end on. 
+	6. Wait for the script to finish running, and you should be prompted to save the pdf. 
 
 If you want to download an entire textbook, it is recommended that you download the book in sections of around 150 pages to reduce the load on the browser. You could then combine the pdfs together using external tools such as `pdfunite`. 
 
