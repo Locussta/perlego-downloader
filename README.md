@@ -5,7 +5,7 @@
 College students that have used Perlego before know that downloading EBooks for offline viewing is not easy. This repository contains scripts that help paying users download their EBooks without hassle. 
 
 **For the most basic use case (Less than ~200 pages):** 
-1. Open Ebook in a browser (ideally ones available as PDF). 
+1. Open Ebook in a browser (currently only ones available as PDF). 
 1. Go to the page you want to start printing. 
 1. Open Chrome's developer console [via the UI](https://developers.google.com/web/tools/chrome-devtools/open#chrome).
 1. Paste the content of `PerlegoContent.js` into the console and press enter. 
